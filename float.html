@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts in CSS(1)</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.10em;
+            margin:0 auto;
+            max-width:900px;
+            width:90%;
+            padding: 50px;
+            border-radius: 3px;
+            box-shadow: 3px 3px 5px rgb(213, 203, 249);
+            
+        }
+        #box{
+            float:left;
+            width:200px;
+            height:200px;
+            border-radius: 3px;
+            background-color: rgb(223, 227, 226);
+            padding:10px;
+            margin:15px;
+        }
+        
+        h2{
+            background-color: rgb(246, 195, 195);
+            border-radius: 3px;
+            padding:25px;
+            text-align:justify;
+
+        }
+        .cleared{
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Float Property</h1>
+    <img id="box"src="..\extras\logo (3).png" alt="user" >
+    <h2>Resume</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quisquam temporibus rem rerum officia odio cupiditate cum placeat? Voluptatum quasi incidunt facilis optio itaque repellat temporibus porro, aut ad illum soluta quis, aspernatur velit explicabo inventore dolorem dolorum et amet repellendus numquam eum aperiam deleniti mollitia? Labore consequuntur sint aliquid?</p>
+
+    <p class="cleared">Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Accusantium quisquam temporibus rem rerum officia odio cupiditate cum placeat? Voluptatum quasi incidunt facilis optio itaque repellat temporibus porro, aut ad illum soluta quis, aspernatur velit explicabo inventore dolorem dolorum et amet repellendus numquam eum aperiam deleniti mollitia? Labore consequuntur sint aliquid?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quisquam temporibus rem rerum officia odio cupiditate cum placeat? Voluptatum quasi incidunt facilis optio itaque repellat temporibus porro, aut ad illum soluta quis, aspernatur velit explicabo inventore dolorem dolorum et amet repellendus numquam eum aperiam deleniti mollitia? Labore consequuntur sint aliquid?</p>
+</body>
+</html>

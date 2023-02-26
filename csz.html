@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipping_Sizing_Z-index</title>
+    <style>
+        .clip_circle{
+            clip-path: circle(45% at 50% 50%);
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            margin-left: 40%;   
+        }
+
+
+        div{
+            width:160px;
+            height:80px;
+            padding: 20px;
+            border: 8px solid red;
+            background-color: yellow;
+        }
+        .content-box{
+            box-sizing: content-box;
+        }
+        .border-box{
+            box-sizing: border-box;
+        }
+
+        div#layer1{
+            z-index: 1; 
+            position: absolute;
+            top:8px;
+            left:8px;
+            width:450px;
+            height: 200px;
+            background-color: green;
+            border:1px  ;
+            padding:5px;
+            border-radius: 3px;
+        }
+        div#layer2{
+            position: absolute;
+            top:25px;
+            left:25px;
+            width:450px;
+            height: 200px;
+            background-color:orange;
+            border:1px ;
+            padding:5px;
+            border-radius: 3px;
+        }
+        div#layer3{
+            position: absolute;
+            top:50px;
+            left:50px;
+            width:450px;
+            height: 200px;
+            background-color: red;
+            border:1px ;
+            padding:5px;
+            border-radius: 3px;
+        }
+        p{
+            text-transform: capitalize;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+            margin-top: 500px;
+            font-size: 1.25em;
+        }
+
+    </style>
+</head>
+<body>
+   <!-- <img src="..\extras\rpic.jpg" alt="Reshav" class="clip_circle">
+
+
+    <div class="content-box">Content-box</div>
+    <br>
+    <div class="border-box">Border-box
+    </div>-->
+    
+    <div id="layer1">Layer1</div>
+    <div id="layer2">Layer2</div>
+    <div id="layer3">Layer3</div>
+
+    <p> Here in line "34" we can clearly see that the z-index value 1 can overlap the entire div unlike the 3 over 2 over 1 . You can practice with/ without using z-index to see the effect 
+    </p>
+</body>
+</html>

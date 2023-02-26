@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        form {
+            border: 1px solid black;
+            background-color: rgb(207, 192, 255);
+            margin: -8px;
+            position: sticky;
+            top: 1px;
+
+        }
+
+        .cssmarquee {
+            height: 50px;
+            overflow: hidden;
+            position: sticky;
+            top:90px;
+        }
+
+        .cssmarquee h3 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.5em;
+            color: rgb(35, 89, 84);
+            position: sticky;
+            width: 100%;
+            height: 100%;
+            margin: 1px;
+            line-height: 50px;
+            text-align: center;
+            transform: translateX(100%);
+            animation: cssmarquee 25s  1s linear infinite;
+        }
+
+        @keyframes cssmarquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 400;
+            color: rgb(55, 26, 131);
+            text-align: center;
+
+        }
+
+        .table1,
+        th {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 2px solid;
+            border-radius: 3px;
+            border-collapse: separate;
+            padding: 30px;
+           float: inline-start;
+           margin: 50px;
+            background-color: rgba(36, 25, 247, 0.489);
+            border-color: rgb(120, 84, 237);
+            
+            color: rgb(43, 41, 41);
+
+
+        }
+        
+        @media screen and (min-width:601px) {
+
+            .table1 th {
+
+                color:white;
+                
+
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .table1 th {
+
+                color:black;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin: 10px;
+               
+
+
+            }
+            .table1{
+                position: relative;
+                left:135px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <p>
+            This is to show you how the responsivness works in css for table, here you can see that there are four boxex
+            namely hello1,2,3,4 respectively they will undergo responsivness for device screen sizes - windows, tablet
+            and mobile.
+        </p>
+
+    </form>
+    <div class="cssmarquee">
+        <h3>CSS Marquee..Scrolling Text </h3>
+    </div>
+    <table class="table1">
+
+        <th id="cls1">Hello 1</th>
+        <th id="cls2">Hello 2</th>
+        <th id="cls3">Hello 3</th>
+        <th id="cls4">Hello 4</th>
+
+    </table>
+</body>
+
+</html>

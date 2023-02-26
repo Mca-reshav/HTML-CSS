@@ -1,0 +1,163 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    text-align: center;
+    font-size: 1.30em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 3px;
+}
+.c1items,.c2items,.c3items,.c4items,.c5items,.c6items{
+    padding:5px;
+    margin:3px;
+    border-radius: 5px;
+    color: rgb(78, 76, 76);
+    background-color: rgba(10, 1, 31, 0.299);
+}
+
+.c1items{
+    
+    line-height: 25;
+}
+.c2items{
+   
+    line-height: 13;
+}
+.c3items{
+    
+    line-height: 8;
+}
+.c4items{
+    
+    line-height: 6;
+}
+
+.c5items{
+    
+    line-height: 4;
+}
+
+
+#c1item1{
+    grid-row-start: 1;
+    grid-row-end: 13;
+}
+#c2item1{
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+#c2item2{
+    grid-row-start: 7;
+    grid-row-end: 13;
+}
+#c3item1{
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+#c3item2{
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+#c3item3{
+    grid-row-start: 9;
+    grid-row-end: 13;
+}
+
+
+#c4item1{
+    grid-row-start:1 ;
+    Grid-row-end:4;
+}
+
+#c4item2{
+    grid-row-start:4;
+    Grid-row-end:7 ;
+}
+
+#c4item3{
+    grid-row-start:7;
+    Grid-row-end:10;
+}
+#c4item4{
+    grid-row-start:10 ;
+    Grid-row-end:13 ;
+}
+
+
+#c5item1{
+    grid-row-start:1 ;
+    Grid-row-end:3 ;
+}
+
+#c5item2{
+    grid-row-start:3;
+    Grid-row-end:5 ;
+}
+
+#c5item3{
+    grid-row-start:5;
+    Grid-row-end:7;
+}
+#c5item4{
+    grid-row-start:7 ;
+    Grid-row-end:9 ;
+}
+
+#c5item5{
+    grid-row-start:9;
+    Grid-row-end:11 ;
+}
+
+#c5item6{
+    grid-row-start:11;
+    Grid-row-end:13;
+}
+
+
+#c6item1{
+    grid-row-start:1 ;
+    Grid-row-end:2 ;
+}
+#c6item2{
+    grid-row-start: 2;
+    Grid-row-end: 3;
+}
+#c6item3{
+    grid-row-start:3;
+    Grid-row-end: 4;
+}
+#c6item4{
+    grid-row-start:4;
+    Grid-row-end: 5;
+}
+#c6item5{
+    grid-row-start: 5;
+    Grid-row-end: 6;
+}
+#c6item6{
+    grid-row-start:6;
+    Grid-row-end: 7;
+}
+#c6item7{
+    grid-row-start:7;
+    Grid-row-end:8;
+}
+#c6item8{
+    grid-row-start: 8;
+    Grid-row-end: 9;
+}
+#c6item9{
+    grid-row-start:9;
+    Grid-row-end: 10;
+}
+#c6item10{
+    grid-row-start:10;
+    Grid-row-end:11 ;
+}
+#c6item11{
+    grid-row-start: 11;
+    Grid-row-end: 12;
+}
+#c6item12{
+    grid-row-start:12;
+    Grid-row-end: 13;
+}

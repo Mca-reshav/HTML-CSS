@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        .input1:hover{
+            background-color:rgb(52, 199, 52);
+            color:white;
+
+        }
+        .input2:hover{
+            background-color:rgb(180, 38, 38);
+            color:white;
+
+        }
+        body{
+            border-radius: 3px;
+            border-style:none;
+            margin-left: 375px; margin-right: 375px; 
+            border-radius: 5px;
+            text-align:justify;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+            border:2px solid rgba(53, 52, 55, 0.568);
+            background-color: rgba(244, 242, 250, 0.568);;
+        }
+        .input1,.input2{
+            padding: 15px;
+            margin-left:10px;
+            width:225px;
+            border-radius: 5px;
+            border-style: none;
+            cursor:pointer;
+            background-color: rgb(173, 173, 236);
+            font-weight: 600;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="password"],
+        textarea,select
+        {
+            width:96%;
+            padding: 10px;
+            border:1px groove black;
+            border-radius: 2px;
+
+        }
+        fieldset{
+            
+            border-radius: 2px;
+            border-style: none;
+           
+
+        }
+        #gender{
+            background-color: white;
+            border: 1px solid black;
+        }
+        @media  screen and (max-width:800px)  {
+            body{
+               color:darkgray;
+               font-size:xx-small;
+               margin:0px;
+               padding:0px;
+               width:fit-content;
+               font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+            input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="password"],
+        textarea,select
+        {
+            padding:0px;
+            border-style: none;
+        }
+        #gender{
+            background-color: rgb(230, 240, 175);
+            border: 1px solid rgb(220, 251, 146);
+        }
+            
+    }
+    </style>
+</head>
+<body>
+    <form  action="">
+        <fieldset class="container">
+       <h1 style="color: rgba(39, 39, 43, 0.689);">Payment Form &nbsp;<img src="..\extras\rpic.jpg"  width="60px" height="60px" style="border-radius:30px;
+        "></h1><hr color="rgb(68, 68, 73)" >
+       <fieldset><legend>
+        <h2>Contact Details</h2></legend>
+        <p>Name: <input type="text" name="name"required  placeholder="Ram"></p>
+       <fieldset id="gender">
+        <legend  style="border-radius: 5px;">Gender</legend> 
+        <p>
+            Male<input type="radio" name="gender"  id="gender "required>
+            Female<input type="radio" name="gender"  id="gender "required>
+        </p></fieldset>
+        <p>Address: <br><textarea name="address" id="address" cols="100%" rows="3"  placeholder="I live at..."></textarea></p>
+        <p>PhoneNo:
+            <input type="number" name="phn" id="phn" placeholder="0123456789">
+        </p>
+        <p>
+            Email: <input type="email"  name="email" id="email" required  placeholder="abc@xyz.com">
+        </p>
+        <p>
+            Pincode: <input type="number" name="pin" id="pin" required  placeholder="123456">
+        </p>
+        </fieldset>
+        <fieldset><legend>
+        <h2>
+            <!--Payment Details-->
+            Payment Details
+        </h2></legend>
+        <p>
+            CardType:
+            <select name="cardtype" id="cardtype"required  >
+                <option value="-">--select--</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Visa">Visa</option>
+            </select>
+        </p>
+        <p>
+            CardNumber: <input type="number" name="cardno" id="cardno"required  placeholder=" 0000 1111 2222 3333">
+        </p>
+        <p>
+            ExpiryDate: <input type="date" name="date" id="date"required>
+        </p>
+        <p>
+            CVV: <input type="password" name="cvv" id="cvv" required   placeholder="123"> 
+        </p>
+        
+        <input class="input1"type="submit" value="PayNow">
+        <input class="input2" type="reset" value="Reset"> 
+    
+    </fieldset>
+</fieldset> 
+    </form>
+</body>
+</html> 

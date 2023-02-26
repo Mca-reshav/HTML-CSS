@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive content</title>
+    <style>
+        
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            font:14px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: #ccc;
+        }
+        article,
+        aside,
+        figure,
+        header,
+        footer,
+        hgroup,
+        menu,
+        nav,
+        section{
+            display: block;
+        
+        }
+        h3{
+            font:24px Georgia;
+            margin: 0 0 10px 0;
+
+        }
+        p{
+            margin: 0 0 20px 0;
+        }
+        #fluid-wrap{
+            width: 70%;
+            margin:60px auto;
+            padding:20px;
+            background: #eee;
+            overflow:hidden;
+        }
+        #sidebar{
+            width:35%;
+            float:left;
+        }
+        #sidebar ul {
+            list-style: none;
+        }
+        #sidebar ul li a{
+            color:#900;
+            text-decoration: none;
+            padding:3px 0;
+            display: block;
+        }
+        @media all and(min-width:1001px) {
+            #sidebar ul li a::after{
+                content: "("attr(data-email)")";
+                font-size: 11px;
+                font-style:normal;
+                color:chartreuse;
+            }            
+        }
+        @media all and(max-width:1000px) and (min-width:700px) {
+            #sidebar ul li a::before{
+                content: "email:";
+                font-style: italic;
+                color:darkgoldenrod;
+
+            }
+            
+        }
+        @media all and(max-width:699px) and (min-width:500px),(min-width:1332px) {
+            #sidebar ul li a {
+                padding-left: 21px;
+                color: darkorchid;
+                background: url("../extras/rpic.jpg") left center no-repeat; 
+            }
+            
+        }
+
+
+        #main-content{
+            width:65%;
+            float:right;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div id="fluid-wrap">
+    <div id="sidebar">
+        <h3>Responsive Content</h3>
+        <ul id="nav">
+            <li><a data-email="reshavbajaj@786.com" href="">reshavbajaj</a></li>
+            <li><a data-email="duke_bajaj@outlook.com" href="">duke_bajaj</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum similique reiciendis mollitia consequatur necessitatibus perspiciatis. Ad, consectetur optio ipsa cupiditate eum nostrum sit magnam? Provident, aliquam sequi est ducimus quis quos inventore facere eos fugiat reiciendis quas voluptates sunt adipisci voluptatibus cumque aliquid recusandae omnis optio? Ducimus, unde omnis.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum similique reiciendis mollitia consequatur necessitatibus perspiciatis. Ad, consectetur optio ipsa cupiditate eum nostrum sit magnam? Provident, aliquam sequi est ducimus quis quos inventore facere eos fugiat reiciendis quas voluptates sunt adipisci voluptatibus cumque aliquid recusandae omnis optio? Ducimus, unde omnis.</p>
+    </div>
+</div>
+</body>
+</html>

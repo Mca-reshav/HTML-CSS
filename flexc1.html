@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Challenge1 </title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 500;
+            background-color: rgb(235, 246, 194);
+
+        }
+        .flex-container-1,.flex-container-2,.flex-container-3{
+            color:white;
+            line-height: 2;
+            
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+
+        }
+        .flex-items-1{
+            background-color: chocolate;
+            border-radius: 5px;
+            height:250px;
+            width:33%;
+            
+            font-size: 1.5em;
+            margin: 5px;
+           
+
+        }
+        .flex-items-2{
+            background-color: chocolate;
+            border-radius: 5px;
+            height:50px;
+            width:24%;
+            
+            font-size: 1.5em;
+            margin: 5px;
+            
+
+        }
+        .flex-items-3{
+            background-color: chocolate;
+            border-radius: 5px;
+            height:50px;
+            width:19%;
+           
+            font-size: 1.5em;
+            margin: 5px;
+            
+
+        }
+       #aa,#ab,#ac{
+            height:50px;
+            width:30%;
+            background-color: rgb(236, 196, 51);
+            border-radius: 5px;
+            margin: 5px;
+            margin-top: 40px;
+           
+
+       }
+       #flex-items-1a{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+       }
+    </style>
+</head>
+<body>
+    <div class="flex-container-1">
+        <div class="flex-items-1" id="flex-items-1a">1
+            
+            <div class="a" id="aa">1</div>
+            <div class="a" id="ab">2</div>
+            <div class="a" id="ac">3</div>
+        
+        
+        </div>
+        <div class="flex-items-1" id="flex-items-1b">2</div>
+
+        <div class="flex-items-1" id="flex-items-1c">3</div>
+    </div>
+    <div class="flex-container-2">
+        <div class="flex-items-2" id="flex-items-2.1">1</div>
+        <div class="flex-items-2" id="flex-items-2.2">2</div>
+        <div class="flex-items-2" id="flex-items-2.3">3</div>
+        <div class="flex-items-2" id="flex-items-2.4">4</div>
+    </div>
+    <div class="flex-container-3">
+        <div class="flex-items-3" id="flex-items-3.1">1</div>
+        <div class="flex-items-3" id="flex-items-3.2">2</div>
+        <div class="flex-items-3" id="flex-items-3.3">3</div>
+        <div class="flex-items-3" id="flex-items-3.4">4</div>
+        <div class="flex-items-3" id="flex-items-3.5">5</div>
+    </div>
+    
+</body>
+</html>

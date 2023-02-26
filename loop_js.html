@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concepts of loop</title>
+</head>
+<body>
+    <h1>Concept of loop in JS</h1>
+    <script>
+
+        //------------------------------------------------------
+
+        /*for loop*/
+
+        for(let i=0;i<10;i++){
+         console.log(i)
+       }
+        //------------------------------------------------------
+
+        /*do while loop */
+        let i=10;
+        do{
+            console.log(i)
+            i--
+        }
+        while
+
+            (i>1)
+       
+        //------------------------------------------------------
+
+        /*while loop*/
+        k=1;
+        while(k<10){
+            console.log("Hello World")
+            k++
+        }
+        //------------------------------------------------------
+
+        /*for ... in loop*/
+
+        let animal={
+            name:"Lion",leg:"4"
+        }
+        for(let key in animal){
+            console.log(key,animal[key]);
+        }
+        //------------------------------------------------------
+
+        let group=["Ram","lakshman","hanuman","sita"]
+        for(let key in group){
+            console.log(key,group[key])
+        }
+
+        //------------------------------------------------------
+
+        /*for...of loop*/
+
+        let names=["Ram","lakshman","hanuman","sita"]
+        for(let name of names){
+            console.log(name)
+        }
+
+    </script>
+</body>
+</html>

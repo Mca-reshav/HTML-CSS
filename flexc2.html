@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Challenge2</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: grey;
+            font-size: 1.25em;
+        }
+        .flex-container-1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin: 15px;
+            padding: 10px;
+            
+        }
+        .flex-items-1{
+            height: 550px;
+            width:30%;
+            border: 1px solid none;
+            border-radius: 2px;
+            text-align: justify;
+            background-color:whitesmoke;
+            margin: 15px;
+            box-shadow: 3px 3px 5px black;
+            
+            
+            
+        }
+        #flex-item-1b{
+            height: 600px;
+            width:30%;
+            
+        }
+        img{
+            height:200px;
+            width:100%;
+        }
+        h2,p{
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .input1{
+            background-color: rgb(106, 247, 93);
+            border-radius: 2px;
+            padding: 10px;
+            width:300px;
+            border-style: none;
+            cursor:pointer;
+            margin-left: 45px;
+           
+        }
+        .input1:hover{
+            background-color: rgb(51, 251, 51);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container-1">
+        <div class="flex-items-1" id="flex-item-1a">
+            <img src="..\extras\Screenshot (140).png" alt="img1">
+            <h2>Journey Song</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum facere, quo velit voluptas illo maiores mollitia! Quidem deleniti voluptatem, amet culpa voluptate ex vel sapiente.</p><br>
+            <input class="input1"type="submit" value="Click Me">    
+        </div>
+        <div class="flex-items-1" id="flex-item-1b">
+            <img src="..\extras\Screenshot (138).png" alt="img2">
+            <h2>Revoic Song</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem fugit minus quod perspiciatis distinctio tempora, expedita iusto omnis, quam deleniti esse et, eius pariatur non.</p><br><br><br>
+            <input class="input1"type="submit" value="Click Me">
+        </div>
+        <div class="flex-items-1" id="flex-item-1c">
+            <img src="..\extras\Screenshot (139).png" alt="img3">
+            <h2>Gypsy Balma</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reiciendis incidunt ut architecto asperiores obcaecati quo! Optio quia cum molestiae architecto officiis temporibus consectetur deserunt!</p>
+            <input class="input1"type="submit" value="Click Me"> 
+        </div>
+
+       
+    </div>
+</body>
+</html>

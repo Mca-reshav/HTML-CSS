@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        a{
+            animation: bouncing 0.5s ease 0s infinite alternate both;
+            background-color:black;
+            color:white;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 2em;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            padding: 1em 2em 1.1em;
+            text-decoration: none;
+            text-transform: capitalize;
+            vertical-align: top;
+            margin: 100px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        @keyframes bouncing{
+            0%{
+                bottom:0%;
+                box-shadow: 0 10px 15px yellow;
+            }
+            50%{
+                bottom:25%;
+                box-shadow: 0 30px 30px orange;
+            }
+            100%{
+                bottom:50%;
+                box-shadow: 0 70px 70px red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a>loading</a>
+</body>
+</html>

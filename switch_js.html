@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statement</title>
+</head>
+<body>
+<h1 style="text-align:center; font-family:cursive; color:rgb(41, 112, 114); background-color: rgb(230, 222, 202);border-radius: 20px;">Use of Switch Cases</h1>
+<script>
+    var fruit=prompt('Choose the fruit you want');
+    switch(fruit){
+        case 'Apple':
+            alert('Apple is Rs.150/kg');
+            break;
+        case 'Mango':
+            alert('Mango is Rs.100/kg');
+            break;
+         case 'Papaya':
+            alert('Papaya is Rs.80/kg');
+            break;
+        case 'Orange':
+            alert('Orange is Rs.120/kg');
+            break;
+        case 'Banana':
+            alert('Banana is Rs.50/kg');
+            break;
+        case 'Guava':
+            alert('Guava is Rs.50/kg');
+            break;
+        case 'Pineapple':
+            alert('Pineapple is Rs.100/kg');
+            break;
+        case 'Watermelon':
+            alert('Watermelon is Rs.40/kg');
+            break;
+        case '':
+            alert('Sorry, Input your Choice of fruit');
+            break;
+        default:alert(`${fruit} Not Available`);
+    }
+    alert('*Price can vary')
+</script>
+</body>
+</html>

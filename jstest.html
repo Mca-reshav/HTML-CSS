@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js pattern test</title>
+</head>
+<style>
+    table,
+    td {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 5px;
+        margin-top: 50px;
+        margin-left: 250px;
+        text-align: center;
+        border: 1px;
+        border-radius: 2px;
+        border-collapse: separate;
+    }
+
+    tr {
+        color: aliceblue;
+        background-color: rgb(128, 128, 202);
+    }
+
+    th {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <script>
+        var ary = [["Ram", 25, "1st", "Male"],
+        ["Shyam", 23, "2nd", "Male"],
+        ["Mohan", 21, "3rd", "Male"],
+        ["Sita", 22, "1st", "Female"],
+        ["Radha", 23, "2nd", "Female"],
+        ["Raman", 24, "3rd", "Male"]]
+        document.write("<table>");
+
+        for (var a = 0; a <= ary.length; a++) {
+            document.write("<tr>")
+            for (var b = 0; b <= 3; b++) {
+                document.write("<td>" + ary[a][b] + " " + "</td>")
+            }
+            document.write("</tr>")
+        }
+
+        document.write("</table")
+    </script>
+</body>
+
+</html>

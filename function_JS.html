@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+</head>
+<body>
+    <script>
+        //Use of function
+        /*
+        function cookMaggie(maggi,water,cup){
+            alert("Your Maggie will be get ready in" + " " +maggi*2 + " minutes" + " | " + "Ingredients used are:-" + maggi + "Maggie" + " , " + water + "Cup of Water" + " , " + cup + "Cup of Veggies")
+        }
+        cookMaggie(4,8,1);*/
+
+        //Use of function for return value
+
+        let bread1=prompt("Which Bread would you like to have ?")
+        let veggie1=prompt("Which Veggie would you like to have ?")
+        let sauce1=prompt("Which Sauce would you like to have ?")
+
+        function makeSandwich(bread, veggies, sauce){
+            let sandwich=bread+"Bread"+veggies+"Veggies"+sauce+"Sauce";
+            return sandwich;
+        }
+        let vegSandwich=makeSandwich(bread1,veggie1,sauce1);
+        alert(vegSandwich);
+    </script>
+</body>
+</html>

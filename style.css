@@ -1,0 +1,83 @@
+header,footer{
+    background-color:rgb(146, 199, 243);
+     box-shadow: 2px 2px 5px rgb(101, 90, 248);
+padding: 15px;
+text-align: center;
+border-radius: 3px;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+}
+
+nav,.section2{
+padding: 5px;
+border-radius: 3px;
+text-align:center;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    padding: 50px;
+    float:inline-start;
+    font-weight: 400;
+    font-size: 1.10em;
+    
+}
+
+nav{
+    background-color:rgb(204, 211, 255);
+    overflow: hidden;
+    padding: 15px;
+}
+
+a,footer:hover{
+    color:tomato;
+}
+
+a,footer:visited{
+    color:rebeccapurple;
+}
+
+.section1,.section3{
+    
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.section1,.section2,.section3{
+    background-color: rgb(179, 231, 247);
+}
+
+table{
+    border-top: 10px;
+    padding:20px;
+  
+}
+
+.img{
+    
+    clip-path: circle(45% at 50% 50%);
+}
+
+video{
+    
+    border: 1px ;
+    padding: 3px;
+}
+footer a{
+    text-decoration:none;
+    padding-left: 50px;
+    float:inline-start;
+    font-weight: 400;
+    font-size: 1.10em;
+}
+nav,.section1,.section2,.section3{
+    background-color: rgb(230, 242, 251);
+    box-shadow: 2px 2px 5px rgb(101, 90, 248);
+}

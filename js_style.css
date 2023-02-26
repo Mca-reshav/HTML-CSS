@@ -1,0 +1,27 @@
+button{
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 1px solid rgb(19, 100, 23);
+    background-color: rgba(124, 239, 126, 0.856);
+    color:rgb(22, 110, 28);
+    border-radius: 10px;
+}
+h1,button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+fieldset{
+    margin:5%;
+    padding: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    color:rgb(27, 134, 27);
+    background-color: white;
+    border: 1px solid rgb(27, 134, 27);
+    border-radius: 10px;
+    
+}

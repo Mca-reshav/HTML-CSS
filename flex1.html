@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_one</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(239, 244, 249);
+            padding: 10px;
+
+        }
+        .flex-container{
+            display: flex;
+            flex-wrap: nowrap;
+           flex-direction:row;
+            
+        }
+        .flex-items{
+            height: 100px;
+            width: 100px;
+            color: white;
+            border:1px solid none;
+            border-radius: 5px;
+            font-size: 2em;
+            text-align: center;
+            font-weight: bold;
+            line-height: 2.75;
+            box-shadow: 3px 3px 5px grey;
+            margin:5px;
+            
+
+        }
+        #flex-item-1{
+            background-color: red;
+            
+        }
+        #flex-item-2{
+            background-color: orange;
+            flex-grow:5;
+        }
+        #flex-item-3{
+            background-color: yellow;
+            flex-grow: 2;
+        }
+        #flex-item-4{
+            background-color: green;
+            flex-shrink: 4;
+        }
+        #flex-item-5{
+            background-color: purple;
+        }
+        #flex-item-6{
+            background-color: blue;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-items" id="flex-item-1">1</div>
+        <div class="flex-items" id="flex-item-2">2</div>
+        <div class="flex-items" id="flex-item-3">3</div>
+        <div class="flex-items" id="flex-item-4">4</div>
+        <div class="flex-items" id="flex-item-5">5</div>
+        <div class="flex-items" id="flex-item-6">6</div>
+
+    </div>
+</body>
+</html>
